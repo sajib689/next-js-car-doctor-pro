@@ -9,7 +9,7 @@ const Services = () => {
         <h1 className="text-5xl font-bold">Our Service Area</h1>
         <p>
           the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.{" "}
+          humour, or randomised words which dont look even slightly believable.{" "}
         </p>
       </div>
       <div className="grid grid-cols lg:grid-cols-3 gap-6 mt-12 container mx-auto">
