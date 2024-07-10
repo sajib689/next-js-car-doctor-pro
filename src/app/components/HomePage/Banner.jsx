@@ -14,7 +14,12 @@ const Banner = () => {
           className="carousel-item relative w-full h-[90vh] bg-top rounded-xl bg-no-repeat bg-cover"
         >
           <div className="w-full h-full flex items-center pl-36">
-            <h1>{banner.title}</h1>
+           <div className="space-y-6">
+           <h1 className="text-5xl font-bold text-white">{banner.title}</h1>
+           <p className="text-white">{banner.description}</p>
+           <button className="btn btn-primary mr-4">Discover More</button>
+           <button className="btn btn-primary btn-outline">Latest Project</button>
+           </div>
           </div>
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
             <a href={banner.prev} className="btn btn-circle">
