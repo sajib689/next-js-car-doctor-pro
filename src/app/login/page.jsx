@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaGoogle,FaFacebookSquare  } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
 
 const page = () => {
   return (
@@ -48,6 +51,16 @@ const page = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
+            <div>
+                <p className="text-center">Or Sign Up with</p>
+            <hr className="mt-2" />
+            <div className="flex justify-center items-center gap-5 p-5">
+            <button className='btn btn-primary'><FaGoogle /></button>
+            <button className='btn btn-primary'><IoLogoGithub /></button>
+            <button className='btn btn-primary'><FaFacebookSquare /></button>
+            </div>
+           <p className="text-center mb-4">Do you have an account? <Link className="text-primary font-semibold" href={'/signup'}>Sign Up</Link> </p> 
+            </div>
           </div>{" "}
         </div>
       </div>
