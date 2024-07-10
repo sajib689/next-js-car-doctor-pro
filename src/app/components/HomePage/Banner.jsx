@@ -1,12 +1,19 @@
 const Banner = () => {
   return (
-    <div className="carousel w-full">
+   <div className="container mx-auto">
+     <div className="carousel w-full  mt-12">
       {banners.map((banner, index) => (
         <div
-        style={{
-          background: `linear-gradient(45deg, rgba(7,25,82,.7), rgba(0,0,0,0.3)), url(/assets/images/banner/${index+1}.jpg)`
-        }} key={index} id={`slide${index+1}`} className="carousel-item relative w-full h-screen">
-          <div>
+          style={{
+            background: `linear-gradient(45deg, rgba(7,25,82,.7), rgba(0,0,0,0.3)), url(/assets/images/banner/${
+              index + 1
+            }.jpg)`,
+          }}
+          key={index}
+          id={`slide${index + 1}`}
+          className="carousel-item relative w-full h-[90vh] bg-top rounded-xl bg-no-repeat bg-cover"
+        >
+          <div className="w-full h-full flex items-center pl-36">
             <h1>{banner.title}</h1>
           </div>
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -20,6 +27,7 @@ const Banner = () => {
         </div>
       ))}
     </div>
+   </div>
   );
 };
 const banners = [
